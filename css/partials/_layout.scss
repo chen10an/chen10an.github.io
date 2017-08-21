@@ -1,0 +1,146 @@
+body {
+  background-color: $color6;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+
+  display: none;
+  align-items: center;
+
+  .content{
+    width: 100%;
+    background-color: $color2;
+    border-top: 3px solid $color2;
+    border-bottom: 3px solid $color2;
+
+    padding: 2rem 0;
+    padding-left: 10%;
+    @include ease_out(background-color);
+
+    display: flex;
+    flex-direction: column;
+
+    .intro {
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      display: inline;
+    }
+
+    #chentian {
+      color: $color6;
+      @include ease_out(color);
+    }
+  }
+}
+
+.about {
+  width: 80%;
+  margin: 0 auto;
+
+  display: none;
+  flex-direction: column;
+
+  h1 {
+    margin-top: $h1;
+    margin-bottom: $h1/2;
+  }
+
+  .underline {
+    border-bottom: 3px solid $color1;
+    cursor: pointer;
+    @include ease_out(border);
+  }
+}
+
+.projects {
+  width: 80%;
+  margin: 0 auto;
+
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+
+  h1 {
+    margin: 0 1%;
+    margin-top: $h1;
+    margin-bottom: $h1/2;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .project {
+      @include colored_border(rgba(0,0,0,0.1));
+      flex-grow: 1;
+      flex-basis: 200px;
+      height: 250px;
+      margin: 1%;
+      padding: 0 1rem;
+      @include ease_out(background-color);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        text-align: center;
+      }
+
+      .links {
+        margin-top: 1rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          border-radius: 10px;
+          background-color: $color4;
+          text-align: center;
+          margin: 0 0.5rem;
+          padding: 0.5rem;
+          cursor: pointer;
+          @include ease_out(transform);
+        }
+      }
+    }
+  }
+}
+
+.display_flex {
+  display: flex;
+}
+
+.no_scroll {
+  overflow: hidden;
+}
+
+@media (min-width: $large) {
+  .home .content {
+    background-color: $color6;
+
+    #chentian {
+      color: $color2;
+    }
+  }
+  .home .content:hover {
+    background-color: $color2;
+
+    #chentian {
+      color: $color6;
+    }
+  }
+
+  .projects .content .project .links p:hover {
+    transform: scale(1.1);
+  }
+
+  .about .underline:hover {
+    border-bottom: 3px solid $color8;
+  }
+}

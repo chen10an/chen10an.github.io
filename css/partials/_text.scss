@@ -1,0 +1,33 @@
+body {
+  font-family: $font_fam;
+  color: $color10;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: $h1;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: $h2;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: $p;
+  margin: 0;
+  padding: 0;
+  line-height: $p*1.5;
+}
+
+@media (max-width: $small) {
+  $h1: 2.7rem;
+  h1 {
+    font-size: $h1;
+  }
+}
