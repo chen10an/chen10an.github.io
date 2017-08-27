@@ -1,4 +1,4 @@
-var mq, wrapper, top_wrap, mid, bottom_wrap, overlay, navList;
+var mq, wrapper, top_wrap, mid, bottom_wrap, overlay, navList, scroll;
 
 function ready(fn) {
   // http://youmightnotneedjquery.com
@@ -17,6 +17,7 @@ function fn() {
   bottom_wrap = top_wrap.nextElementSibling.nextElementSibling;
   overlay = document.getElementsByClassName("overlay")[0];
   navList = overlay.getElementsByTagName("H2");
+  scroll = true;
 
   wrapper.addEventListener("click", toggleOverlay);
 
@@ -44,17 +45,29 @@ function fn() {
   }
 }
 
+function prevent() {
+  event.preventDefault();
+}
+
 function toggleOverlay() {
   top_wrap.classList.toggle("x");
   mid.classList.toggle("x");
   bottom_wrap.classList.toggle("x");
   overlay.classList.toggle("show_overlay");
   overlay.parentElement.classList.toggle("no_scroll");
+
+  scroll = !scroll;
+  if (!scroll) {
+    overlay.parentElement.addEventListener("touchmove", prevent);
+  } else {
+    overlay.parentElement.removeEventListener("touchmove", prevent);
+  }
 }
 
 function toggleDisplay(text) {
   document.getElementsByClassName("display_flex")[0].classList.remove("display_flex");
   document.getElementsByClassName(text)[0].classList.add("display_flex");
+  window.scrollTo(0,0);
   toggleOverlay();
 }
 

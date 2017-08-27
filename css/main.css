@@ -145,6 +145,7 @@ body {
 
 .no_scroll {
   overflow: hidden;
+  touch-action: none;
 }
 
 @media (min-width: 992px) {
@@ -246,8 +247,9 @@ body {
   right: 0;
   transition: all 0.2s ease-out;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .overlay .nav {

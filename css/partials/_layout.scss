@@ -1,5 +1,5 @@
 body {
-  background-color: $color6;
+  background-color: $white;
 }
 
 .home {
@@ -11,9 +11,9 @@ body {
 
   .content{
     width: 100%;
-    background-color: $color2;
-    border-top: 3px solid $color2;
-    border-bottom: 3px solid $color2;
+    background-color: $blue;
+    border-top: 3px solid $blue;
+    border-bottom: 3px solid $blue;
 
     padding: 2rem 0;
     padding-left: 10%;
@@ -31,7 +31,7 @@ body {
     }
 
     #chentian {
-      color: $color6;
+      color: $white;
       @include ease_out(color);
     }
   }
@@ -50,7 +50,7 @@ body {
   }
 
   .underline {
-    border-bottom: 3px solid $color1;
+    border-bottom: 3px solid $pink;
     cursor: pointer;
     @include ease_out(border);
   }
@@ -100,7 +100,7 @@ body {
 
         p {
           border-radius: 10px;
-          background-color: $color4;
+          background-color: $green;
           text-align: center;
           margin: 0 0.5rem;
           padding: 0.5rem;
@@ -118,21 +118,22 @@ body {
 
 .no_scroll {
   overflow: hidden;
+  touch-action: none;
 }
 
 @media (min-width: $large) {
   .home .content {
-    background-color: $color6;
+    background-color: $white;
 
     #chentian {
-      color: $color2;
+      color: $blue;
     }
   }
   .home .content:hover {
-    background-color: $color2;
+    background-color: $blue;
 
     #chentian {
-      color: $color6;
+      color: $white;
     }
   }
 
@@ -141,6 +142,6 @@ body {
   }
 
   .about .underline:hover {
-    border-bottom: 3px solid $color8;
+    border-bottom: 3px solid $gray;
   }
 }
