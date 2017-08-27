@@ -330,6 +330,10 @@ body {
   background-color: #ACF39D !important;
 }
 
+.resume_color {
+  background-color: #F9F7F9 !important;
+}
+
 @media (min-width: 992px) {
   .overlay footer .icons i:hover {
     transform: scale(1.3);

@@ -165,8 +165,9 @@
   background-color: $color4 !important;
 }
 
-// .resume_color {
-// }
+.resume_color {
+  background-color: $color6 !important;
+}
 
 @media (min-width: $large) {
   .overlay footer .icons i:hover {

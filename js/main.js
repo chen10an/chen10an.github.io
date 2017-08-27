@@ -31,7 +31,7 @@ function fn() {
     wrapper.addEventListener("mouseover", toggleWrapper);
     wrapper.addEventListener("mouseout", toggleWrapper);
 
-    for (var i=0; i<navList.length-1; i++) {
+    for (var i=0; i<navList.length; i++) {
       var el = navList[i];
       el.addEventListener("mouseover", function() {
         toggleBackgroundColor(event.target.textContent, overlay);
