@@ -44,9 +44,9 @@ body {
 
 .home .content {
   width: 100%;
-  background-color: #9BD1F7;
-  border-top: 3px solid #9BD1F7;
-  border-bottom: 3px solid #9BD1F7;
+  background-color: #ADD3F4;
+  border-top: 3px solid #ADD3F4;
+  border-bottom: 3px solid #ADD3F4;
   padding: 2rem 0;
   padding-left: 10%;
   transition: background-color 0.2s ease-out;
@@ -80,7 +80,7 @@ body {
 }
 
 .about .underline {
-  border-bottom: 3px solid #FFCAD4;
+  border-bottom: 3px solid #F4D2EA;
   cursor: pointer;
   transition: border 0.2s ease-out;
 }
@@ -131,7 +131,7 @@ body {
 
 .projects .content .project .links p {
   border-radius: 10px;
-  background-color: #ACF39D;
+  background-color: #A2E8CC;
   text-align: center;
   margin: 0 0.5rem;
   padding: 0.5rem;
@@ -153,10 +153,10 @@ body {
     background-color: #F9F7F9;
   }
   .home .content #chentian {
-    color: #9BD1F7;
+    color: #ADD3F4;
   }
   .home .content:hover {
-    background-color: #9BD1F7;
+    background-color: #ADD3F4;
   }
   .home .content:hover #chentian {
     color: #F9F7F9;
@@ -321,15 +321,15 @@ body {
 }
 
 .home_color {
-  background-color: #9BD1F7 !important;
+  background-color: #ADD3F4 !important;
 }
 
 .about_color {
-  background-color: #FFCAD4 !important;
+  background-color: #F4D2EA !important;
 }
 
 .projects_color {
-  background-color: #ACF39D !important;
+  background-color: #A2E8CC !important;
 }
 
 .resume_color {
