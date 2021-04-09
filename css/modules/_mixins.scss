@@ -1,8 +1,0 @@
-@mixin colored_border($color) {
-  border: 3px solid $color;
-  border-radius: 10px;
-}
-
-@mixin ease_out($property) {
-  transition: $property 0.2s ease-out;
-}
